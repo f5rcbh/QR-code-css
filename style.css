@@ -1,0 +1,65 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+:root{
+    /* colors */
+    --white-clr:hsl(0, 0%, 100%);
+    --lighGray-clr:hsl(212, 45%, 89%);
+    --grayBlue-clr:hsl(220, 15%, 55%);
+    --darkBlue-clr:hsl(218, 44%, 22%);
+    /* fonts */
+    --size:15px;
+    --family:'Outfit', sans-serif;;
+    --weight-700:700;
+    --weight-400:400
+}
+/* start styling */
+/* Desktop Version */
+body{
+
+    font-size: var(--size);
+    background-color: var(--lighGray-clr);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--family);
+    font-weight: var(--weight-700);
+    background-color: var(--white-clr);
+    border-radius: 10px;
+    width: 22em;
+    word-wrap: break-word;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 1px 5px  var(--darkBlue-clr);
+}
+
+h2{
+    margin: 10px;
+}
+p{
+    margin: 10px;
+    color: var(--grayBlue-clr);
+}
+img{
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* phone version */
+
+/* i think there is no need for phone version :) */
